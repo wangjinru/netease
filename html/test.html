@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>haorooms前端博客-可视区域加载之 javascript</title>
+    <style>
+        img{width:100%;margin-bottom: 30px; min-height: 400px; background-color: #ddd;}
+
+    </style>
+</head>
+<body>
+<img haoroomslazyload="Chrysanthemum.jpg" src="../img/bestseller-bb-cushion1_01.png" >
+<img haoroomslazyload="Desert.jpg" src="../img/bestseller-two-tone-lip-bar04.png" >
+<img haoroomslazyload="Hydrangeas.jpg" src="../img/bestseller-perfect-renew-regenerator05.png" >
+<img haoroomslazyload="Koala.jpg" src="../img/bestseller-water-bank-essence-ex.jpg" >
+<img haoroomslazyload="Lighthouse.jpg" src="../img/bestsellers-water-bank-moisture-cream-ex.jpg" >
+<img haoroomslazyload="Penguins.jpg" src="../img/banner-bg01.jpg" >
+<img haoroomslazyload="Tulips.jpg" src="../img/bestseller-water-bank-essence-ex.jpg" >
+<script>
+    var imgNum=document.getElementsByTagName('img').length;
+    var imgObj=document.getElementsByTagName("img");
+    var l=0;
+    window.onscroll=function(){
+        var seeHeight = document.documentElement.clientHeight;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        for(var i=l;i<imgNum;i++){
+            if(imgObj[i].offsetTop < seeHeight + scrollTop){
+                if(imgObj[i].src == ""){
+                    imgObj[i].src = imgObj[i].getAttribute("lazysrc");
+                }
+            }
+            if(imgObj[i].offsetTop > seeHeight + scrollTop){
+                l=i;
+                break;
+            }
+        }
+    }
+
+</script>

@@ -1,0 +1,867 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 微软雅黑;
+}
+body{
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 1200px;
+}
+.border{
+  border: 1px solid red;
+}
+.fix{
+  width: 76px;
+  height: 390px;
+  //.border;
+  border: 1px solid #E4E4E4;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+  background: white;
+  .fix1{
+    width: 74px;
+    height: 42px;
+    background: #43ADEB;
+    p{
+      font-size: 13px;
+      color: white;
+      margin-left: 9px;
+    }
+    p:first-child{
+      padding-top: 3px;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+  .div6{
+    width: 74px;
+    height: 86px;
+    //.border;
+    img{
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    p{
+      color: #292A37;
+      font-size: 13px;
+      margin-left: 10px;
+      padding-bottom: 5px;
+      width: 56px;
+      text-align: center;
+      border-bottom: 1px solid #E4E4E4;
+    }
+  }
+}
+.fix2{
+  position: fixed;
+  bottom: 0px;
+  right: 77px;
+  width: 48px;
+  height: 48px;
+  background: #8CD3FF;
+  z-index: 2;
+  p{
+    color: black;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+}
+#head{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-width: 1300px;
+  height: 162px;
+  border-bottom: 2px solid black;
+  z-index: 1;
+  background-color: white;
+  .div2{
+    position: absolute;
+    left: 40%;
+    margin-top: 30px;
+    float: left;
+  }
+  .div1{
+    margin-right: 10px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 28px;
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .div1:first-child{
+    margin-left: 26px;
+  }
+  .div3{
+    float: right;
+    ul{
+      float: right;
+      &:first-child{
+           padding-right: 26px;
+      }
+      img{
+        position: absolute;
+        top: 30px;
+        right: 154px;
+      }
+      li{
+        float: right;
+        list-style: none;
+        margin-top: 36px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-left:2px solid #D3D3D3 ;
+        height: 10px;
+        line-height:5px;
+        a{
+          text-decoration: none;
+          font-size: 12px;
+          color: #767676;
+        }
+      }
+    }
+  }
+  .nav{
+      clear: both;
+      margin-top: 102px;
+      min-width: 700px;
+    ul{
+      margin-left:95px;
+      li{
+        float: left;
+        list-style: none;
+        margin-left: 33px ;
+        padding-bottom: 8px;
+        &:hover{
+          border-bottom: 5px solid #8CD3FF;
+        }
+        a{
+          text-decoration: none;
+          color: #292A37;
+          font-size: 16px;
+        }
+      }
+    }
+    .div4{
+      float: left;
+      margin-left: 70px;
+      margin-top: -20px;
+    }
+    #a1{
+      float: right;
+      margin-right: 20px;
+      margin-top: -13px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      //border: 1px dotted lightgray;
+
+      #a2{
+        float: right;
+        margin-right: 12px;
+        margin-top: 10px;
+        background-image: url("../img/ico-gnb-search.png");
+        background-repeat: no-repeat;
+        background-size: 21px 23px;
+        width: 21px;
+        height: 23px;
+      }
+    }
+    #div_1{
+      display: none;
+      width: 100%;
+      height: 75px;
+      //overflow: hidden;
+      position: absolute;
+      top: 162px;
+      left: 0px;
+      background: white;
+      border-bottom: 2px solid black;
+      input{
+        width: 94%;
+        margin-left: 26px;
+        height: 55px;
+        font-size: 14px;
+        background: #8CD3FF;
+        border: 0px;
+        padding-left: 35px;
+        color: #292A37;
+      }
+      p{
+        color:#292A37 ;
+        font-size: 20px;
+        position: absolute;
+        top: 15px;
+        left: 60px;
+      }
+      div{
+        float: right;
+      }
+      .div_1_1{
+        position: relative;
+        top: 15px;
+        right:60px;
+      }
+      .div_1_2{
+        position: relative;
+        top: -40px;
+        right: 95px;
+      }
+    }
+  }
+}
+
+.section1{
+  width: 100%;
+  height: 219px;
+  padding-left: 75px;
+  clear: both;
+  position: relative;
+  min-width: 1600px;
+  .a5{
+    display: inline-block;
+    float: left;
+    width: 255px;
+    height: 59px;
+    margin-top: 60px;
+    margin-right: 57px;
+    span{
+      display: inline-block;
+      float: left;
+      padding-left: 30px;
+      font-size: 20px;
+      line-height: 59px;
+    }
+    img{
+      margin-left: 65px;
+      margin-top: 0px;
+    }
+  }
+  .a6{
+    border-bottom: 1px solid #3FBEF3;
+    border-left: 1px solid #3FBEF3;
+  }
+  .a7{
+    border-bottom: 1px solid #FF94B7;
+    border-left: 1px solid #FF94B7;
+  }
+  .a8{
+    border-bottom: 1px solid #668BE0;
+    border-left: 1px solid #668BE0;
+  }
+  .a9{
+    border-bottom: 1px solid  #A5A5A5;
+    border-left: 1px solid  #A5A5A5;
+  }
+}
+.section2{
+  clear: both;
+  width: 89%;
+  margin-left: 75px;
+  margin-right: 75px;
+  min-width: 700px;
+  position: absolute;
+  //.border;
+  .p1{
+    font-size: 24px;
+    color: #292A37;
+    padding-bottom: 10px;
+  }
+  a{
+    text-decoration: none;
+    display: none;
+    width: 1200px;
+    height: 298px;
+  }
+  img{
+    width: 1200px;
+    height: 298px;
+  }
+  .div5{
+    width: 300px;
+    height: 95px;
+    position: absolute;
+    top: 100px ;
+    left: 455px;
+    background-color: rgba(255,255,255,0.85);
+    p{
+     width: 274px;
+      height: 68px;
+      font-size: 20px;
+      line-height: 68px;
+      text-align: center;
+      border: 1px solid #E6E6E6;
+      color: #292A37;
+      margin-top: 13px;
+      margin-left: 13px;
+    }
+  }
+  .div7{
+    width: 81px;
+    height: 30px;
+    border-bottom: 1px solid #292A37;
+    border-left: 1px solid #292A37;
+    position: absolute;
+    top: 230px;
+    left: 555px;
+    color: #292A37;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  .div8{
+    width: 12px;
+    height: 13px;
+    img{
+      width: 12px;
+      height: 13px;
+      position: absolute;
+      top: 252px;
+      left: 641px;
+    }
+  }
+}
+.div_con{
+  border-bottom: 1px solid lightgray;
+  width: auto;
+  height:293px ;
+}
+.div9{
+  width: 238px;
+  height: 285px;
+  //.border;
+  margin-top: 10px;
+  float: left;
+  cursor: pointer;
+
+  img{
+    width: 180px;
+    height: 180px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  p{
+    font-size: 16px;
+    color: black;
+    margin-left: 55px;
+  }
+  a{
+    width: 118px;
+    height: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background: #8CD3FF;
+    color: #292a37;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+}
+.section3{
+  width: 1200px;
+  height: 422px;
+  position: absolute;
+  top: 1600px;
+  clear: both;
+  min-width: 700px;
+  margin-left: 75px;
+  .p2{
+  font-size: 24px;
+  color: #292A37;
+  padding-bottom: 10px;
+  }
+  .div10{
+    width: 400px;
+    height: 376px;
+    float: left;
+    background:url("../img/sparkling-titbg-tablet.jpg") no-repeat;
+    background-size: 400px 376px;
+    position: absolute;
+    p{
+      font-size: 20px;
+      color: #144B77;
+      position: relative;
+      top: 250px;
+      left: 30px;
+    }
+    img{
+      width: 180px;
+      height: 67px;
+      position: relative;
+      top: 283px;
+      left: 30px;
+    }
+  }
+  .div11{
+    width: 771px;
+    height: 376px;
+    margin-left: 420px;
+    .a10{
+      display: inline-block;
+      width: 177.5px;
+      height: 177.5px;
+      float: left;
+      margin-left: 19px;
+      &:first-child{
+        margin-left: 0px;
+      }
+      img{
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+}
+.section4{
+  width: 90%;
+  height: 460px;
+  clear: both;
+  position: absolute;
+  top: 2150px;
+  left: 75px;
+  min-width: 700px;
+  .div12{
+    background: url("../img/kbeauty-titbg.png");
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 0;
+    opacity: 0.9;
+    float: left;
+    p{
+      font-size: 24px;
+      width: 140px;
+      margin-left: 30px;
+      padding-top: 100px;
+    }
+  }
+  .a11{
+    display: inline-block;
+    width: 520px;
+    height: 406px;
+    float: left;
+    clear: both;
+    position: relative;
+    top: -146px;
+    left: 55px;
+  }
+  .div13{
+    width: 520px;
+    height: 406px;
+    position: relative;
+    z-index: -1;
+    background: url("../img/sokb-lesson058-list-pc.png");
+    background-size: 520px 406px;
+    clear: both;
+  }
+  .div14{
+    width: 100px;
+    height: 100.98px;
+    background: url("../img/kbeauty-video-play.png");
+    background-size: 100px 100.98px;
+    position: relative;
+    top: -255px;
+    left: 210px;
+    z-index: 0;
+  }
+  .div15{
+    float: left;
+    position: absolute;
+    left: 610px;
+    top: 55px;
+    width: 580px;
+    height: 406px;
+    //.border;
+  .p3{
+    font-size: 40px;
+    color: #292a37;
+  }
+  .p4{
+    font-size: 40px;
+    margin-top: 5px;
+    color: #292a37;
+  }
+  .p5{
+    font-size: 14px;
+    margin-top: 15px;
+    color: #292a37;
+  }
+    .a12{
+      text-decoration: none;
+      color: #292a37;
+      display: inline-block;
+      width: 95px;
+      height: 40px;
+      border-bottom: 1px solid #292a37;
+      border-left: 1px solid #292a37;
+      position: absolute;
+      font-size: 14px;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 43px;
+      img{
+        position: relative;
+        top: 16px;
+        left: 13px;
+      }
+    }
+    .div16{
+      position: relative;
+      top: 80px;
+    .p6{
+      font-size: 16px;
+      margin-top: 26px;
+      clear: both;
+      color: #292A37;
+    }
+    img{
+      position: relative;
+      top: -22px;
+      left: 73px;
+    }
+    }
+    .a13{
+      display: inline-block;
+      position: relative;
+      top: 92px;
+      width: 138px;
+      height: 102px;
+      background-image: url("../img/sokb-lesson028-list-pc.png");
+      background-size: 138px 102px;
+      text-decoration: none;
+      div{
+        width: 36px;
+        height: 36.34px;
+        margin-top: 30px;
+        margin-left: 48px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p{
+        width: 115px;
+        height: 37px;
+        font-size: 14px;
+        color: #292A37;
+        //.border;
+        position: relative;
+        top: -36px;
+        left: 156px;
+      }
+    }
+    .a14{
+      background-image: url("../img/sokb-lesson056-list-pc.png");
+      top: 73px;
+    }
+  }
+}
+.section5{
+  width: 1200px;
+  height: 576px;
+  clear: both;
+  position: absolute;
+  top: 2750px;
+  left: 75px;
+  min-width: 700px;
+  .div17{
+    float: left;
+    width: 720px;
+    height: 576px;
+    background: #F7F7F7;
+    .p7{
+      font-size: 24px;
+      color: #292A37;
+      padding-left: 30px;
+      padding-top: 60px;
+    }
+    .div18{
+      width: 340px;
+      height: 50px;
+      background: url("../img/magazine-barbg.jpg") left top no-repeat;
+      margin-top: 18px;
+      span{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+    }
+    strong{
+      font-size: 32px;
+      font-weight: normal;
+      color: #292A37;
+      margin-left: 30px;
+      margin-top: 18px;
+      display: inline-block;
+    }
+    .p8{
+      width: 660px;
+      height: 40px;
+      padding: 0px 30px;
+      font-size: 11px;
+      color: #292A37;
+      margin-top: 25px;
+      line-height: 20px;
+    }
+    .a15{
+      text-decoration: none;
+    color: #292a37;
+    display: inline-block;
+    width: 95px;
+    height: 40px;
+    border-bottom: 1px solid #292a37;
+    border-left: 1px solid #292a37;
+    position: absolute;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+      margin-left: 30px;
+    img{
+      position: relative;
+      top: 16px;
+      left: 13px;
+    }
+  }
+  }
+  .div19{
+    float: left;
+    background: url("../img/magazine-main-20160605-img01.jpg") no-repeat;
+    background-size: 480px 100%;
+    width: 480px;
+    height: inherit;
+  }
+}
+.section6{
+  width: 1200px;
+  height: 470px;
+  min-width: 700px;
+  position: absolute;
+  top: 3400px;
+  left: 75px;
+  a{
+    text-decoration: none;
+  .div20{
+    width: 300px;
+    height: 330px;
+    margin-top: 65px;
+    position: absolute;
+    float: left;
+  }
+    .div21{
+      width: 290px;
+      height: 120px;
+      border-right: 1px solid lightgray;
+      transform: rotate(35deg);
+      position: relative;
+      top:-90px ;
+      left: 0px;
+    }
+    .p9{
+      color: #292A37;
+      font-size: 24px;
+      padding-top: 10px;
+      position:relative ;
+      top: -110px;
+    }
+    .p10{
+      color: #292A37;
+      font-size: 14px;
+      margin-top: 20px;
+      position:relative ;
+      top: -113px;
+    }
+    img{
+      position:relative ;
+      top: -95px;
+      left: 35px;
+    }
+  }
+  .div22{
+    width: 300px;
+    height: 330px;
+    margin-top: 65px;
+    position: absolute;
+    left: 360px;
+    float: left;
+  }
+  .div23{
+    width: 290px;
+    height: 120px;
+    border-right: 1px solid lightgray;
+    transform: rotate(35deg);
+    position: relative;
+    top:-90px ;
+    left: 0px;
+  }
+  .p11{
+    color: #292A37;
+    font-size: 24px;
+    padding-top: 10px;
+    position:relative ;
+    top: -110px;
+  }
+  .p12{
+    color: #292A37;
+    font-size: 14px;
+    margin-top: 20px;
+    position:relative ;
+    top: -115px;
+  }
+   .p13{
+     float: right;
+     font-size: 24px;
+     color: #292A37;
+     margin-top: 70px;
+     position: relative;
+     left: -390px;
+   }
+  .div24{
+    width: 510px;
+    height: 263px;
+    float: right;
+    margin-top: 100px;
+    margin-right: -120px;
+  }
+  a{
+    text-decoration: none;
+    .div25{
+      width: 225px;
+      height: 248px;
+      float: left;
+      background: url("../img/sns-bg01.gif") no-repeat;
+      background-size: 225px 248px;
+      margin-top: 15px;
+      .p14{
+        font-size: 20px;
+        color: #292A37;
+        margin-top: 25px;
+        margin-left: 25px;
+      }
+      .p15{
+        width: 165px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #292A37;
+        line-height: 20px;
+        margin-left: 25px;
+      }
+      img{
+        margin-top: 130px;
+        width: 160px;
+        height: 89.72px;
+      }
+    }
+  }
+}
+.section7{
+  width: 1200px;
+  height: 100px;
+  position: absolute;
+  top: 3920px;
+  left: 75px;
+  background: #F7F7F7;
+  min-width: 700px;
+  div{
+    width: 55px;
+    height: 38px;
+    border-right: 1px solid #292A37;
+    transform: rotate(40deg);
+    float: left;
+    margin-top: 17px;
+  }
+  .a16{
+    width: 219px;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 35px;
+    p{
+      color: #292A37;
+      padding-right:90px;
+      float: left;
+      font-size: 16px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+.foot{
+  width: 1200px;
+  height: 238px;
+  min-width: 700px;
+  position: absolute;
+  top: 4100px;
+  left: 75px;
+  border-top: 1px solid lightgray;
+  .div25{
+    border-left: 1px solid #D2D0D7;
+    float: left;
+    height: 12px;
+    line-height: 10px;
+    margin-top: 50px;
+    &:first-child{
+      margin-left: 26px;
+      border: 0px;
+    }
+    a{
+      text-decoration: none;
+      color: #767676;
+      font-size: 14px;
+      margin-left: 7px;
+      margin-right: 7px;
+      margin-top: -2px;
+    }
+  }
+  .p14{
+    clear: both;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 80px;
+    margin-left: 33px;
+  }
+  .div26{
+    margin-top: 25px;
+    margin-left: 33px;
+  }
+  .div27{
+    margin-top: 15px;
+    margin-left: 33px;
+    color: #767676;
+    font-size: 13px;
+    float: left;
+  }
+  .a17{
+    float: left;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    p{
+      float: right;
+      color: #767676;
+      font-size: 13px;
+      margin-left: -88px;
+    }
+    .img1{
+      position: relative;
+      top: -10px;
+      left: 255px;
+    }
+  }
+  .div28{
+    float: right;
+    display: none;
+  }
+}

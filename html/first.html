@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/first.css"/>
+    <script src="../js/first.js"></script>
+    <style>
+        .clear:after{
+            overflow:hidden;
+            content:"";
+            display:block;
+            clear:both;
+            height:0;
+        }
+        #wrap{
+            height: 660px;
+            width: 89%;
+            position:relative;
+            overflow: hidden;
+            top: 160px;
+            margin-left: 75px;
+            margin-right: 75px;
+            min-width: 1200px;
+        }
+        #inner{
+            width: 1000%;
+            height:100%;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        #inner img{
+            width:10%;
+            float: left;
+        }
+        .pa{
+            width: 200px;
+            position: absolute;
+            top: 455px;
+            left: 350px;
+            text‐align:center;
+            margin-left: 183px;
+        }
+        .pa span{
+            /*background: #F2F2F2;*/
+            /*color:red;*/
+            display: inline-block;
+            width: 20px;
+            height: 15px;
+            float: left;
+            /*line-height: 30px;*/
+            /*text-align: center;*/
+            background-image: url("../img/slider-pager-normal.png");
+            background-repeat: no-repeat;
+            background-size: 20px 15px;
+            cursor: pointer;
+            /*border: 1px solid red;*/
+        }
+
+        .pa .selected{
+            background-image: url("../img/slider-pager-active.png");
+            background-size: 20px 15px;
+        }
+        .arrow {
+            position: absolute;
+            top: 0;
+            width: 30px;
+            height: 70px;
+            cursor: pointer;
+            line‐height: 300px;
+            text‐align: center;
+
+        }
+        .arrow span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 235px;
+            margin-left: 25px;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        #right{
+            right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fix">
+         <div class="fix1">
+             <p>欢迎进入</p>
+             <p>手机商城</p>
+         </div>
+        <a href="">
+            <div>
+            <img src="../img/img_qrcode.png" alt=""width="74px"height="74px"/>
+            </div>
+        </a>
+        <a href="">
+            <div class="div6">
+                <img src="../img/icon_quick_promotion.png" alt=""width="46px"height="46px"/>
+                <p>官网礼遇</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="div6">
+                <img src="../img/icon_quick_wechat.png" alt=""width="46px"height="46px"/>
+                <p>在线客服</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="div6">
+                <img src="../img/icon_quick_center.png" alt=""width="46px"height="46px"/>
+                <p>咨询热线</p>
+            </div>
+        </a>
+    </div>
+    <a href="javascript:scroll(0,0)">
+        <div class="fix2">
+        <p>顶部</p>
+    </div>
+    </a>
+    <header id="head">
+        <div class="div1">
+            <a href=""><img src="../img/sns-weixin.png" alt=""/></a>
+        </div>
+        <div class="div1">
+            <a href=""><img src="../img/sns-weibo.png" alt=""/></a>
+        </div>
+        <div class="div1">
+            <a href=""><img src="../img/sns-beautymirror.png" alt=""/></a>
+        </div>
+        <div class="div2">
+            <a href=""><img src="../img/logo.png" alt=""/></a>
+        </div>
+        <div class="div3">
+            <ul>
+                <li><a href="">新闻</a></li>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+                <li style="border: 0px"><a href=""><img src="../img/ico-cart.png" alt=""width="20px"height="19.38px"/></a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../html/second.html">品牌故事</a></li>
+                <li><a href="">产品</a></li>
+                <li><a href="">人气星品</a></li>
+                <li><a href="">臻享套装</a></li>
+                <li><a href="">官网礼遇</a></li>
+                <li><a href="">闪耀之美</a></li>
+                <li><a href="">School of K-Beauty</a></li>
+                <li><a href="">美容志</a></li>
+                <li><a href="">美肌定制</a></li>
+            </ul>
+            <div class="div4"><a href=""><img src="../img/cushion-icon.png" alt=""/></a></div>
+            <div id="a1"><div id="a2"></div></div>
+            <div id="div_1">
+                <input type="text"id="input1"/>
+                <p>请输入一个关键字</p>
+                <div class="div_1_1"><img src="../img/ico-gnb-search.png" alt=""width="20px"height="20px"/></div>
+                <div class="div_1_2"><img src="../img/gnbsch-removetext.png" alt=""/></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="wrap"><!‐‐ 图片展示区 ‐‐>
+        <div id="inner" class="clear"><!‐‐ 所有图片并排的块 ‐‐>
+            <a href=""><img src="../img/kv-laneige-waterbank-print-20160901.jpg" alt=""></a>
+            <a href=""><img src="../img/kv-Intense_lip_gel-20160831.jpg" alt=""></a>
+            <a href=""><img src="../img/kv-laneige-meets-fashion-20160831.jpg" alt=""></a>
+            <a href=""><img src="../img/kv-perfect-renew-regenerator-20160901.jpg" alt=""></a>
+            <a href=""><img src="../img/kv-dual-action-essence-lotion-20160901.jpg" alt=""></a>
+            <a href=""><img src="../img/kv-laneige-waterbank-print-20160901.jpg" alt=""></a>
+        </div>
+        <div class="pa" id="paganation"><!‐‐ 页面按钮区域 ‐‐>
+            <span class ="selected"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="left" class="arrow"><span><img src="../img/visual-arrow-left.png" alt=""/></span></div><!‐‐ 向左切换按钮 ‐‐>
+        <div id="right" class="arrow"><span><img src="../img/visual-arrow-right.png" alt=""/></span></div><!‐‐ 向右切换按钮 ‐‐>
+    </div>
+
+<section class="section1">
+
+    <a href=""class="a5 a6"style="z-index: 999">
+        <span>护肤</span>
+        <img src="../img/banner-bg01.jpg" alt=""/>
+    </a>
+    <a href=""class="a5 a7" >
+        <span>彩妆</span>
+        <img src="../img/banner-bg02.jpg" alt=""/>
+    </a>
+    <a href=""class="a5 a8">
+        <span>男士</span>
+        <img src="../img/banner-bg03.jpg" alt=""style="margin-top: 0px;margin-left: 55px"/>
+    </a>
+    <a href=""class="a5 a9">
+        <span>美容饮品</span>
+        <img src="../img/banner-bg04.jpg" alt=""style="margin-left: 55px;margin-top: 0px"/>
+    </a>
+
+</section>
+
+<section class="section2">
+    <p class="p1">畅销产品</p>
+    <a href="" class="aa">
+        <img src="../img/bestseller-bb-cushion1_01.png" alt=""/>
+        <div class="div5"><p>气垫BB霜</p></div>
+        <div class="div7">查看详情</div>
+        <div class="div8"><img src="../img/linkbg.png" alt=""/></div>
+    </a>
+    <a href="" class="aa">
+        <img src="../img/bestseller-perfect-renew-regenerator05.png" alt=""/>
+        <div class="div5"><p>致美紧致修护精华液</p></div>
+        <div class="div7">查看详情</div>
+        <div class="div8"><img src="../img/linkbg.png" alt=""/></div>
+    </a>
+    <a href="" class="aa">
+        <img src="../img/bestsellers-water-bank-moisture-cream-ex.jpg" alt=""/>
+        <div class="div5"><p>新水库特润精华液</p></div>
+        <div class="div7">查看详情</div>
+        <div class="div8"><img src="../img/linkbg.png" alt=""/></div>
+    </a>
+    <a href="" class="aa">
+        <img src="../img/bestseller-water-bank-essence-ex.jpg" alt=""/>
+        <div class="div5"><p>新水库清润凝霜</p></div>
+        <div class="div7">查看详情</div>
+        <div class="div8"><img src="../img/linkbg.png" alt=""/></div>
+    </a>
+    <a href="" class="aa">
+        <img src="../img/bestseller-two-tone-lip-bar04.png" alt=""/>
+        <div class="div5"><p>双色立体唇膏</p></div>
+        <div class="div7">查看详情</div>
+        <div class="div8"><img src="../img/linkbg.png" alt=""/></div>
+    </a>
+    <div class="div_con"style="min-width: 1600px">
+    <div class="div9">
+        <img src="../img/bb-cushion-spf-50-pa_01_new.png" alt=""width="180px"height="180px"/>
+        <p>气垫BB霜（美白）</p>
+        <a href="">立刻购买</a>
+    </div>
+    <div class="div9">
+        <img src="../img/perfect-renew-regenerator_01.png" alt=""width="180px"height="180px"/>
+        <p>致美紧致修护精华液</p>
+        <a href="">立刻购买</a>
+    </div>
+    <div class="div9">
+        <img src="../img/water-bank-essence-ex-01%20(1).png" alt=""width="180px"height="180px"/>
+        <p>新水库特润精华液</p>
+        <a href="">立刻购买</a>
+    </div>
+    <div class="div9">
+        <img src="../img/water-bank-gel-cream-ex_01.png" alt=""width="180px"height="180px"/>
+        <p>新水库清润凝霜</p>
+        <a href="">立刻购买</a>
+    </div>
+    <div class="div9">
+        <img src="../img/two-tone-lip-bar_02_new.png" alt=""width="180px"height="180px"/>
+        <p>双色立体唇膏</p>
+        <a href="">立刻购买</a>
+    </div>
+    </div>
+</section>
+<section class="section3">
+    <p class="p2">闪耀之美</p>
+    <div class="div10">
+        <p>唤醒与生俱来的闪耀之美</p>
+        <img src="../img/sparkling-titbg-camera.jpg" alt=""/>
+    </div>
+    <div class="div11">
+        <a href=""class="a10"><img src="../img/sb-263-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"><img src="../img/sb-261-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"><img src="../img/sb-260-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"><img src="../img/sb-259-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"style="margin-left: 0px;margin-top: 20px"><img src="../img/sb-256-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"style="margin-top: 20px"><img src="../img/sb-255-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"style="margin-top: 20px"><img src="../img/sb-252-img-pc.jpg" alt=""/></a>
+        <a href=""class="a10"style="margin-top: 20px"><img src="../img/sb-249-img-pc.jpg" alt=""/></a>
+    </div>
+</section>
+<section class="section4">
+    <div class="div12"><p>School of K-Beauty</p></div>
+    <a href=""class="a11">
+        <div class="div13"></div>
+        <div class="div14"></div>
+    </a>
+    <div class="div15">
+        <p class="p3">58</p>
+        <p class="p4">夏日尽享海洋美甲风格</p>
+        <p class="p5">夏日看来像是“展示海洋艺术最好时节” </p>
+        <a href=""class="a12">查看详情 <img src="../img/linkbg.png" alt=""/></a>
+        <div class="div16"><p class="p6">相关视频</p><img src="../img/kbeauty-relatied-titbg.gif" alt=""/></div>
+        <a href=""class="a13">
+               <div><img src="../img/kbeauty-video-play.png" alt=""/></div>
+            <p>双色立体唇膏渐变唇妆</p>
+            <p>...</p>
+        </a>
+        <a href=""class="a13 a14 "style="margin-left: 160px">
+            <div><img src="../img/kbeauty-video-play.png" alt=""/></div>
+            <p>打造夏季清爽妆容夏季蓝色帅气LO...</p>
+        </a>
+
+    </div>
+</section>
+<section class="section5">
+   <div class="div17">
+         <p class="p7">美容志</p>
+       <div class="div18"><span>2016.05</span></div>
+       <strong>引领今年夏日流行趋势!</strong>
+       <p class="p8">在让人萌发出想前往某地的冲动的夏季，在炎热的夏季，让我们用稍显火爆又酷劲十足的彩妆来为自己增添生机与活力吧。
+           灵活利用条纹图案和蓝色调，尽情享受惟夏日所独具的果敢。</p>
+       <a href=""class="a15">查看详情 <img src="../img/linkbg.png" alt=""/></a>
+   </div>
+    <div class="div19"></div>
+</section>
+<section class="section6">
+    <a href=""><div class="div20">
+        <div class="div21"></div>
+       <p class="p9">美肌定制</p>
+       <p class="p10">寻找适合您肌肤的最佳产品！</p>
+        <img src="../img/finder-img.png" alt=""width="233px"height="210px"/>
+   </div>
+    </a>
+    <a href=""><div class="div22">
+        <div class="div23"></div>
+        <p class="p11">K妆美人镜</p>
+        <p class="p12">通过触屏就能为我定制兰芝妆容！</p>
+        <img src="../img/mirror-img.png" alt=""width="233px"height="210px"/>
+    </div>
+    </a>
+    <p class="p13">关注我们</p>
+    <div class="div24">
+        <a href="">
+            <div class="div25">
+                <p class="p14">官方微博</p>
+                <p class="p15">关注「兰芝中国」官方微博，畅享更多水润惊喜！</p>
+                <img src="../img/sns-ico01.png" alt=""/>
+            </div>
+        </a>
+        <a href="">
+            <div class="div25"style="margin-left: 30px;background-image: url('../img/sns-bg02.gif');background-size: 225px 248px">
+                <p class="p14">官方微博</p>
+                <p class="p15">关注「兰芝中国」官方微博，畅享更多水润惊喜！</p>
+                <img src="../img/sns-ico02.png" alt=""/>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="section7">
+    <a href="" class="a16">
+        <p>品牌故事</p>
+        <img src="../img/footer-pagelink-ico06.gif" alt=""style="margin-left: 25px"/>
+    </a>
+    <div></div>
+    <a href="" class="a16">
+        <p>会员俱乐部</p>
+        <img src="../img/footer-pagelink-ico03.gif" alt=""/>
+    </a>
+    <div></div>
+    <a href="" class="a16">
+        <p>常见问题</p>
+        <img src="../img/footer-pagelink-ico01.gif" alt=""style="margin-left: 25px"/>
+    </a>
+    <div></div>
+    <a href="" class="a16">
+        <p>专柜及位置</p>
+        <img src="../img/footer-pagelink-ico04.gif" alt=""/>
+    </a>
+</section>
+<section class="foot">
+    <div class="div25">
+        <a href="">关于我们</a>
+    </div>
+    <div class="div25">
+        <a href="">服务使用条款</a>
+    </div>
+    <div class="div25">
+        <a href=""style="font-weight: bold">隐私声明</a>
+    </div>
+    <div class="div25">
+        <a href="">网站地图</a>
+    </div>
+    <p class="p14">联系我们 : 400-820-5118, 800-820-5118, laneige@laneige.com.cn  /  联系时间 : 周一至周日 09:00-21:00 (节假日休息)</p>
+    <div class="div26">
+        <img src="../img/footlogo.gif" alt=""width="174px"height="17px"/>
+    </div>
+    <div class="div27">&copy;2015 AMOREPACIFIC,All Rights Reserved</div>
+    <a href=""class="a17">
+        <img src="../img/footer-markimg.gif" alt=""style="position: relative;top: -10px;left: 10px"/>
+        <p>
+            沪ICP备11011083号-19
+        </p>
+        <img src="../img/sns-weixin.png" alt=""width="32px"height="32px"class="img1"/>
+        <img src="../img/sns-weibo.png" alt=""width="32px"height="32px"class="img1"/>
+        <img src="../img/sns-beautymirror.png" alt=""width="32px"height="32px"class="img1"/>
+    </a>
+    <div class="div28">
+        <ul>
+        <li>中国/中文</li>
+        <li>한국 / 한국어</li>
+        <li>INTERNATIONAL / ENGLISH</li>
+        <li value="">香港 / 繁體中文</li>
+        <li value="">HONG KONG / ENGLISH</li>
+        <li value="">台灣 / 繁體中文</li>
+        <li value="">SINGAPORE / ENGLISH</li>
+        <li value="">MALAYSIA / ENGLISH</li>
+        <li value="">ประเทศไทย / ไทย</li>
+        <li value="">Việt Nam / Tiếng Việt</li>
+        <li value="">INDONESIA / BAHASA INDONESIA</li>
+        <li value="">PHILIPPINES / ENGLISH</li>
+        <li value="">USA / ENGLISH</li>
+        <li value="">CANADA / ENGLISH</li>
+        </ul>
+    </div>
+</section>
+</body>
+<script>
+    var wrap=document.getElementById("wrap");
+    var inner=document.getElementById("inner");
+    var spanList=document.getElementById("paganation").getElementsByTagName("span");
+    var left=document.getElementById("left");
+    var right=document.getElementById("right");
+    var clickFlag=true;//设置左右切换标记位防止连续按,效果有点不同
+    var time;//主要用来设置自动滑动的计时器
+    var index=0;//记录每次滑动图片的下标
+    var Distance=wrap.offsetWidth;//获取展示区的宽度，即每张图片的宽度
+    /*
+     * offsetwidth:是元素相对父元素的偏移宽度。等于border+padding+width
+     * */
+
+    //定义图片滑动的函数
+    function AutoGo(){
+        var start=inner.offsetLeft;//获取移动块当前的left的开始坐标
+        /*
+         *   刷新页面默认是第一张图，第二张图就是要移动的
+         *   此时第二张没出来。获取到的start为0
+         * */
+
+        var end=index*Distance*(-1);//获取移动块移动结束的坐标。即图片左移的距离
+        console.log(end);
+
+        //计算公式即当移动到第三张图片时，图片下标为2乘以图片的宽度就是块的left值。
+        var change=end-start;//偏移量   -510 - 0
+        var timer;//用计时器为图片添加动画效果
+        var t=0;
+        var maxT=20;//用于计算图片的偏移量： 值越大移动的越慢(计算时做分母)
+        /*
+         * 先把按钮状态清除,再让对应按钮改变状态
+         * */
+        clear();
+
+        if(index==spanList.length){
+            spanList[0].className="selected";
+        }else{
+            spanList[index].className="selected";
+        }
+
+
+        /*clearInterval(timer);*///开启计时器前先把之前的清
+        timer=setInterval(function(){
+            /* debugger*/
+            t++;
+            if(t>=maxT){//当图片到达终点停止计时器
+                clearInterval(timer);
+//                inner.style.transition='ease all 1s'
+                clickFlag=true;//当图片到达终点才能切换
+            }
+            inner.style.left=change/maxT*t+start+"px";//每个17毫秒让块移动
+//            inner.style.transition='ease all 1s';
+            if(index==spanList.length&&t>=maxT){
+                inner.style.left=0;
+                index=0; //当图片到最后一张时把它瞬间切换回第一张，由于都同一张图片不会影响效果
+            }
+        },40);
+    }
+
+    //开启图片自动向右滑动的计时器
+    time=setInterval(forward,3000);
+
+
+    /*
+     *   自动轮动图片方法
+     * */
+    function forward(){
+        /*  debugger*/
+        index++;
+        //当图片下标到最后一张把小标换0
+        if(index>spanList.length){
+            index=0;
+        }
+        AutoGo();
+    }
+    //图片向左滑动函数
+    function backward(){
+        index--;
+        //当图片下标到第一张让它返回到倒数第二张，
+        //left值要变到最后一张才不影响过渡效果
+        if(index<0){
+            index=spanList.length-1;
+            inner.style.left=(index+1)*Distance*(-1)+"px";
+        }
+        AutoGo();
+    }
+
+
+
+
+    //设置鼠标悬停动画停止
+    wrap.onmouseover=function(){
+        clearInterval(time);
+    }
+    wrap.onmouseout=function(){
+        time=setInterval(forward,3000);
+    }
+    //遍历每个按钮让其切换到对应图片
+//    for(var i=0;i<spanList.length;i++){
+//        spanList[i].onclick=function(){
+//            index=spanList[i];
+//            AutoGo();
+//        }
+//    }
+    for(var i=0;i<spanList.length;i++){
+        spanList[i].index=i;
+        spanList[i].onclick=function(){
+            clearInterval(timer);//�����ʱ��ֹͣ��ʱ��
+            AutoGo(this.index);
+        }
+
+    }
+    //左切换事件
+    left.onclick=function(){
+
+        if(clickFlag){
+            backward();
+        }
+        clickFlag=false;
+    }
+    //右切换事件
+    right.onclick=function(){
+        if(clickFlag){
+            forward();
+        }
+        clickFlag=false;
+    }
+    //清除页面所有按钮状态颜色
+    function clear(){
+        for(var i=0;i<spanList.length;i++){
+            spanList[i].className="";
+        }
+    }
+</script>
+</html>
